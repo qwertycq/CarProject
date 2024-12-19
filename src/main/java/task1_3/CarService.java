@@ -1,4 +1,4 @@
-package org.example;
+package task1_3;
 
 import java.math.BigDecimal;
 import java.util.*;
