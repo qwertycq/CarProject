@@ -6,12 +6,12 @@ CREATE TABLE IF NOT EXISTS car_model (
                            country_code VARCHAR(10)
 );
 
-CREATE TABLE IF NOT EXISTS dealer (
+CREATE TABLE IF NOT EXISTS dealerEntity (
                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
                         name VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS car (
+CREATE TABLE IF NOT EXISTS carEntity (
                      id BIGINT AUTO_INCREMENT PRIMARY KEY,
                      car_model_id BIGINT,
                      dealer_id BIGINT,
@@ -20,5 +20,5 @@ CREATE TABLE IF NOT EXISTS car (
                      color VARCHAR(255),
                      price DOUBLE,
                      FOREIGN KEY (car_model_id) REFERENCES car_model(id),
-                     FOREIGN KEY (dealer_id) REFERENCES dealer(id)
+                     FOREIGN KEY (dealer_id) REFERENCES dealerEntity(id)
 );

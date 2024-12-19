@@ -1,8 +1,8 @@
-import task4_8.dto.CarDto;
-import task4_8.thread.DealerCenter;
-import task4_8.thread.DealerService;
-import task4_8.thread.DealerServiceImpl;
-import task4_8.utility.CarGenerator;
+import task1_8.dto.CarDto;
+import task1_8.thread.DealerCenter;
+import task1_8.thread.DealerService;
+import task1_8.thread.DealerServiceImpl;
+import task1_8.utility.CarGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
